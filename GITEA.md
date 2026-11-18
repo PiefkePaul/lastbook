@@ -53,8 +53,9 @@ Stand 18.11.2026. Gilt für Menschen und KI-Agenten (Claude, Claude Code, Codex,
 - Fehlende Werte nie erfinden: Fundort im NAS-Wiki `infrastruktur/schluessel-inventar`, dann Paul fragen.
 
 ## Stand in diesem Repo
-- Fork von `Immortal-Protocols/lastbook` (in Gitea als Fork markiert, Auto-Fork-Abgleich aktiv). Keine Workflows, Actions in Gitea aus.
-- Der automatische Abgleich mit dem Original geht nur per Fast-Forward. Der erste eigene Commit auf `main` (auch dieser PR) beendet das: danach Updates per PR vom Original. Soll der Fork deckungsgleich bleiben, diesen PR schließen statt mergen.
+- Fork von `Immortal-Protocols/lastbook` (am 17.11. per Auto-Fork angelegt, in Gitea als Fork markiert, Spiegel `Immortal-Protocols/lastbook`). Keine Workflows, Actions in Gitea aus.
+- Bis zum ersten eigenen Commit ist `main` identisch mit dem Original. Updates kommen dann als reiner Fast-Forward („Fork synchronisieren“ in Gitea bzw. „Sync fork“ auf GitHub), ohne Merge-Commit und ohne Konfliktrisiko.
+- Mit eigenen Commits (z. B. dieser Datei) laufen `main` und Original auseinander. Updates gehen dann nur noch per Merge: PR vom Spiegel `Immortal-Protocols/lastbook:main` nach `Scholz/lastbook:main` (main ist geschützt). Konflikte drohen nur, wenn das Original dieselben Dateien ändert (`GITEA.md`, `AGENTS.md`, `CLAUDE.md`).
 
 ## Quellen (NAS-Wiki, intern)
 - `infrastruktur/github-gitea-umzug/plan`, `.../ci-umstellung`, `.../vorlage-docker-workflow`
